@@ -30,4 +30,42 @@
             { "sku": "MON-003", "name": "ASUS ProArt Display PA278QV", "price": 399 },
             { "sku": "MON-004",
 ::contentReference[oaicite:0]{index=0}
+        ]
+    },
+    {
+        "category": "Headsets",
+        "items": [
+            { "sku": "HSET-001", "name": "Sony WH-1000XM4", "price": 349 },
+            { "sku": "HSET-002", "name": "Bose QuietComfort 35 II", "price": 299 },
+            { "sku": "HSET-003", "name": "Jabra Evolve2 65", "price": 249 }
+        ]
+    },
+    {
+        "category": "Mice",
+        "items": [
+            { "sku": "MOU-001", "name": "Logitech MX Master 3", "price": 99 },
+            { "sku": "MOU-002", "name": "Apple Magic Mouse 2", "price": 79 },
+            { "sku": "MOU-003", "name": "Microsoft Bluetooth Mouse", "price": 49 }
+        ]
+    },
+    {
+        "category": "Printers & Scanners",
+        "items": [
+            { "sku": "PRT-001", "name": "HP LaserJet Pro M404dn", "price": 299 },
+            { "sku": "PRT-002", "name": "Canon PIXMA TS5360a", "price": 149 },
+            { "sku": "PRT-003", "name": "Epson EcoTank ET-2720", "price": 199 },
+            { "sku": "SCN-001", "name": "Brother DS-640 Portable Scanner", "price": 179 },
+            { "sku": "SCN-002", "name": "Fujitsu ScanSnap iX1500", "price": 399 }
+        ]
+    },
+    {
+        "category": "Bundles",
+        "items": [
+            { "sku": "BND-001", "name": "Home Office Starter Pack", "price": 999 },
+            { "sku": "BND-002", "name": "Professional Workstation Bundle", "price": 1499 },
+            { "sku": "BND-003", "name": "Ultimate Productivity Suite", "price": 1999 }
+        ]
+    }
+]
+
  
