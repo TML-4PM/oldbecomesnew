@@ -1,89 +1,51 @@
-document.addEventListener("DOMContentLoaded", function () {
-  loadProducts();
-});
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Job Pricing Calculator</title>
+  <!-- Ensure styles.css is in the same folder as index.html -->
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Reference the script file (make sure the file name is correct) -->
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="../assets/officeworks-logo.png" alt="Officeworks Logo" class="logo" />
+      <img src="../assets/geeks2u-logo.png" alt="Geeks2U Logo" class="logo" />
+    </div>
+    <h1>Job Pricing Calculator</h1>
+  </header>
 
-async function loadProducts() {
-  try {
-    const response = await fetch("../data/04_productList.json");
-    const products = await response.json();
+  <main>
+    <section id="quote-form">
+      <div class="email-section">
+        <label for="email">Enter Email to Pre-fill:</label>
+        <input type="email" id="email" placeholder="Enter your email" />
+        <button id="load-quote" onclick="fetchQuote()">Load Quote</button>
+      </div>
 
-    const productContainer = document.getElementById("product-list");
-    productContainer.innerHTML = "";
+      <h2>Select Products</h2>
+      <div id="product-list">
+        <!-- Products will be dynamically loaded here -->
+      </div>
 
-    products.forEach((category) => {
-      let categoryDiv = document.createElement("div");
-      categoryDiv.innerHTML = `<h3>${category.category}</h3>`;
+      <div class="buttons">
+        <button onclick="generateQuote()">Generate Quote</button>
+        <button onclick="printQuote()">Print as PDF</button>
+        <button onclick="scheduleJob()">Schedule Job</button>
+      </div>
 
-      category.items.forEach((product) => {
-        let productDiv = document.createElement("div");
-        productDiv.classList.add("product-item");
-        productDiv.innerHTML = `
-          <input type="checkbox" id="${product.sku}" value="${product.sku}">
-          <label for="${product.sku}">${product.name} - $${parseFloat(product.price).toFixed(2)}</label>
-          <input type="number" id="qty-${product.sku}" min="1" placeholder="Quantity" value="1">
-        `;
-        categoryDiv.appendChild(productDiv);
-      });
+      <h2>Quote Summary</h2>
+      <div id="quote-summary"></div>
+      <p id="total-price"></p>
+      <button id="send-email" onclick="sendEmail()">Email Quote</button>
+    </section>
+  </main>
 
-      productContainer.appendChild(categoryDiv);
-    });
-  } catch (error) {
-    console.error("Error loading products:", error);
-  }
-}
-
-function generateQuote() {
-  let selectedProducts = [];
-  let totalPrice = 0;
-
-  document.querySelectorAll("#product-list input[type='checkbox']:checked").forEach((checkbox) => {
-    let quantity = parseInt(document.getElementById(`qty-${checkbox.value}`).value) || 1;
-    let productLabel = document.querySelector(`label[for='${checkbox.value}']`).innerText;
-    // Extract the price from the label (assumes the format "Product Name - $price")
-    let price = parseFloat(productLabel.split("- $")[1]);
-    let totalProductPrice = price * quantity;
-
-    selectedProducts.push({
-      name: productLabel.split(" - $")[0],
-      quantity: quantity,
-      total: totalProductPrice,
-    });
-    totalPrice += totalProductPrice;
-  });
-
-  const summary = document.getElementById("quote-summary");
-  summary.innerHTML = selectedProducts
-    .map((p) => `${p.name} x${p.quantity} - $${p.total.toFixed(2)}`)
-    .join("<br>");
-
-  document.getElementById("total-price").innerText = `Total: $${totalPrice.toFixed(2)}`;
-}
-
-function printQuote() {
-  window.print();
-}
-
-function sendEmail() {
-  const email = document.getElementById("email").value;
-  if (email) {
-    // Email functionality can be implemented here
-    alert(`Email sent to ${email}`);
-  } else {
-    alert("Please enter a valid email address.");
-  }
-}
-
-function fetchQuote() {
-  const email = document.getElementById("email").value;
-  if (email) {
-    // Implement functionality to fetch and pre-fill quote based on email here
-    alert(`Fetching quote for ${email}`);
-  } else {
-    alert("Please enter a valid email address.");
-  }
-}
-
-function scheduleJob() {
-  // Implement job scheduling functionality here
-  alert("Job scheduling feature is under development.");
-}
+  <footer>
+    <p>&copy; 2025 Officeworks &amp; Geeks2U</p>
+  </footer>
+</body>
+</html>
