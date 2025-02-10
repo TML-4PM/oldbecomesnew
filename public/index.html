@@ -4,16 +4,75 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Job Pricing Calculator</title>
-  <link rel="stylesheet" href="../styles.css" />
+  <link rel="stylesheet" href="styles.css" />
   <script defer src="03_script.js"></script>
 </head>
 <body>
   <header>
-    <img src="./assets/officeworks-logo.png" alt="Officeworks Logo" />
-    <img src="./assets/geeks2u-logo.png" alt="Geeks2U Logo" />
+    <img src="assets/officeworks-logo.png" alt="Officeworks Logo" />
+    <img src="assets/geeks2u-logo.png" alt="Geeks2U Logo" />
     <h1>Job Pricing Calculator</h1>
   </header>
-  <!-- ... rest of the HTML ... -->
+
+  <section id="quote-form">
+    <div class="email-prefill">
+      <label for="email">Enter Email to Pre-fill:</label>
+      <input type="email" id="email" placeholder="Enter your email" />
+      <button onclick="fetchQuote()">Load Quote</button>
+    </div>
+
+    <h2>Select Products</h2>
+    <div id="product-list"></div>
+
+    <h2>Service Job Details</h2>
+    <div id="job-details">
+      <label for="base-hours">Base Hours Estimate:</label>
+      <input type="number" id="base-hours" placeholder="e.g., 10" />
+      <br />
+      <label for="complexity">Complexity Level:</label>
+      <select id="complexity">
+        <option value="1.0">Basic</option>
+        <option value="1.2">Standard</option>
+        <option value="1.5">Advanced</option>
+        <option value="2.0">Extreme</option>
+      </select>
+      <br />
+      <label for="service-type">Service Type:</label>
+      <select id="service-type">
+        <option value="1.0">Remote</option>
+        <option value="1.3">Onsite</option>
+        <option value="1.5">Urgent</option>
+        <option value="1.7">Multi-Site</option>
+      </select>
+      <br />
+      <fieldset>
+        <legend>Additional Cost Factors:</legend>
+        <label><input type="checkbox" id="stairs" /> Stairs (+10%)</label><br />
+        <label><input type="checkbox" id="data-migration" /> Full Data Migration (+50%)</label><br />
+        <label><input type="checkbox" id="security" /> Government Clearance (+40%)</label><br />
+      </fieldset>
+      <br />
+      <label for="schedule-date">Schedule Job (Date & Time):</label>
+      <input type="datetime-local" id="schedule-date" />
+    </div>
+
+    <button onclick="generateQuote()">Generate Quote</button>
+    <button onclick="printQuote()">Print as PDF</button>
+    <button onclick="scheduleJob()">Schedule Job</button>
+
+    <h2>Quote Summary</h2>
+    <div id="quote-summary"></div>
+    <p id="total-price"></p>
+
+    <button onclick="sendEmail()">Email Quote</button>
+  </section>
+
+  <!-- Chatbot container -->
+  <div id="chatbot-container">
+    <!-- The chatbot widget will be injected by functions/chatbot.js -->
+    <script src="../functions/chatbot.js"></script>
+  </div>
+
   <footer>
     <p>&copy; 2025 Officeworks &amp; Geeks2U</p>
   </footer>
