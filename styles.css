@@ -1,0 +1,26 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+header img {
+    width: 100px;
+    margin: 10px;
+}
+
+#product-list div {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 5px;
+}
+
+button {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+}
+
+#chat-box {
+    font-size: 14px;
+}
