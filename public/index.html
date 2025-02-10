@@ -4,16 +4,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Job Pricing Calculator</title>
-  <!-- Ensure styles.css is in the same folder as index.html -->
   <link rel="stylesheet" href="styles.css" />
-  <!-- Reference the script file (make sure the file name is correct) -->
   <script defer src="script.js"></script>
 </head>
 <body>
   <header>
     <div class="logo-container">
-      <img src="../assets/officeworks-logo.png" alt="Officeworks Logo" class="logo" />
-      <img src="../assets/geeks2u-logo.png" alt="Geeks2U Logo" class="logo" />
+      <!-- Updated asset paths: assets folder is inside public -->
+      <img src="./assets/officeworks-logo.png" alt="Officeworks Logo" class="logo" />
+      <img src="./assets/geeks2u-logo.png" alt="Geeks2U Logo" class="logo" />
     </div>
     <h1>Job Pricing Calculator</h1>
   </header>
@@ -28,7 +27,7 @@
 
       <h2>Select Products</h2>
       <div id="product-list">
-        <!-- Products will be dynamically loaded here -->
+        <!-- Products will be loaded here dynamically -->
       </div>
 
       <div class="buttons">
