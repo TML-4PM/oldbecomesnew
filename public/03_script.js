@@ -37,12 +37,10 @@ function generateQuote() {
   let productCostTotal = 0;
 
   document.querySelectorAll("#product-list input[type='checkbox']:checked").forEach((checkbox) => {
-    let quantity = parseInt(
-      document.getElementById(`qty-${checkbox.value}`).value
-    ) || 1;
+    let quantity = parseInt(document.getElementById(`qty-${checkbox.value}`).value) || 1;
     selectedProducts.push({ sku: checkbox.value, quantity: quantity });
 
-    // Look up price from the label (a production solution would use a proper data model)
+    // Look up price from the label text (a production solution would use a proper data model)
     const priceElement = checkbox.nextElementSibling.textContent;
     const priceMatch = priceElement.match(/\$(\d+(\.\d+)?)/);
     if (priceMatch) {
@@ -53,12 +51,8 @@ function generateQuote() {
 
   // Gather service job details
   const baseHours = parseFloat(document.getElementById("base-hours").value) || 0;
-  const complexityMultiplier = parseFloat(
-    document.getElementById("complexity").value
-  );
-  const serviceTypeMultiplier = parseFloat(
-    document.getElementById("service-type").value
-  );
+  const complexityMultiplier = parseFloat(document.getElementById("complexity").value);
+  const serviceTypeMultiplier = parseFloat(document.getElementById("service-type").value);
   const stairs = document.getElementById("stairs").checked;
   const dataMigration = document.getElementById("data-migration").checked;
   const security = document.getElementById("security").checked;
@@ -77,7 +71,7 @@ function generateQuote() {
   billableHours = Math.ceil(billableHours);
 
   // Define an hourly rate (this can come from a config or database)
-  const hourlyRate = 100; // $100 per hour, for example
+  const hourlyRate = 100; // Example: $100 per hour
   const serviceCost = billableHours * hourlyRate;
 
   // Total cost is the sum of product cost plus service cost
