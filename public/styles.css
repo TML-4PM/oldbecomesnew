@@ -1,98 +1,91 @@
-/* styles.css */
-
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
 }
 
 header {
-    background-color: #0073e6;
-    color: white;
-    padding: 20px 0;
+  background-color: #0073e6;
+  color: white;
+  padding: 20px 0;
 }
 
 header img {
-    width: 100px;
-    margin: 0 10px;
-    vertical-align: middle;
+  width: 100px;
+  margin: 0 10px;
+  vertical-align: middle;
 }
 
 h1 {
-    display: inline;
-    font-size: 24px;
+  display: inline;
+  font-size: 24px;
 }
 
 #quote-form {
-    background-color: white;
-    margin: 20px auto;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 80%;
-    max-width: 800px;
-    text-align: left;
+  background-color: white;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 800px;
+  text-align: left;
 }
 
 #quote-form h2 {
-    color: #333;
+  color: #333;
 }
 
 #product-list {
-    margin: 20px 0;
+  margin: 20px 0;
 }
 
 .product-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
 }
 
 .product-item label {
-    flex: 1;
-    margin-left: 10px;
-}
-
-.quantity-input {
-    width: 60px;
-    margin-left: 10px;
+  flex: 1;
+  margin-left: 10px;
 }
 
 button {
-    background-color: #0073e6;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    margin: 10px 5px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
+  background-color: #0073e6;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
 }
 
 button:hover {
-    background-color: #005bb5;
+  background-color: #005bb5;
 }
 
 #quote-summary {
-    background-color: #f9f9f9;
-    padding: 10px;
-    border-radius: 5px;
-    margin-top: 20px;
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 20px;
 }
 
 #total-price {
-    font-size: 20px;
-    font-weight: bold;
-    margin-top: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
 }
 
 footer {
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
 }
