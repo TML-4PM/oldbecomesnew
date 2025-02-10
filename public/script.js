@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 async function loadProducts() {
-    const response = await fetch("data/productList.json");
+    const response = await fetch("../data/04_productList.json");
     const products = await response.json();
 
     const productContainer = document.getElementById("product-list");
