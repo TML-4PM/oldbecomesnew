@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 async function loadProducts() {
   try {
-    // Fetch the product list JSON from the data folder (adjust path if necessary)
+    // Fetch the product list from the data folder (ensure the path is correct)
     const response = await fetch("../data/04_productList.json");
     const products = await response.json();
     const productContainer = document.getElementById("product-list");
@@ -16,7 +16,7 @@ async function loadProducts() {
       categoryDiv.classList.add("category");
       categoryDiv.innerHTML = `<h3>${category.category}</h3>`;
 
-      // Loop through each product and create UI elements
+      // Loop through each product in the category
       category.items.forEach((product) => {
         let productDiv = document.createElement("div");
         productDiv.classList.add("product-item");
@@ -40,6 +40,7 @@ async function loadProducts() {
         quantityInput.value = "1";
         quantityInput.classList.add("quantity-input");
 
+        // Append the elements to the product div
         productDiv.appendChild(checkbox);
         productDiv.appendChild(label);
         productDiv.appendChild(quantityInput);
@@ -57,16 +58,15 @@ function generateQuote() {
   let selectedProducts = [];
   let totalPrice = 0;
 
-  // Iterate through all selected products
+  // Loop through all checked products
   const checkboxes = document.querySelectorAll("#product-list input[type='checkbox']:checked");
   checkboxes.forEach((checkbox) => {
     const sku = checkbox.value;
     const quantity = parseInt(document.getElementById(`qty-${sku}`).value) || 1;
-    // Get product details from the label text (assumes "Product Name - $price")
     const label = document.querySelector(`label[for='${sku}']`).innerText;
-    const parts = label.split(" - $");
-    const productName = parts[0];
-    const price = parseFloat(parts[1]);
+    // Extract product name and price (assumes format "Product Name - $price")
+    const [productName, priceText] = label.split(" - $");
+    const price = parseFloat(priceText);
     const totalProductPrice = price * quantity;
 
     selectedProducts.push({
@@ -74,16 +74,14 @@ function generateQuote() {
       quantity: quantity,
       total: totalProductPrice,
     });
-
     totalPrice += totalProductPrice;
   });
 
-  // Display quote summary and total price
+  // Display the quote summary and total price
   const summary = document.getElementById("quote-summary");
   summary.innerHTML = selectedProducts
     .map((p) => `${p.name} x${p.quantity} - $${p.total.toFixed(2)}`)
     .join("<br>");
-
   document.getElementById("total-price").innerText = `Total: $${totalPrice.toFixed(2)}`;
 }
 
@@ -94,7 +92,7 @@ function printQuote() {
 function sendEmail() {
   const email = document.getElementById("email").value;
   if (email) {
-    // Insert email functionality here
+    // Email functionality can be implemented here
     alert(`Email sent to ${email}`);
   } else {
     alert("Please enter a valid email address.");
@@ -104,7 +102,7 @@ function sendEmail() {
 function fetchQuote() {
   const email = document.getElementById("email").value;
   if (email) {
-    // Insert functionality to fetch and pre-fill quote based on email here
+    // Implement functionality to fetch and pre-fill quote based on email here
     alert(`Fetching quote for ${email}`);
   } else {
     alert("Please enter a valid email address.");
@@ -112,6 +110,6 @@ function fetchQuote() {
 }
 
 function scheduleJob() {
-  // Insert job scheduling functionality here
+  // Implement job scheduling functionality here
   alert("Job scheduling feature is under development.");
 }
