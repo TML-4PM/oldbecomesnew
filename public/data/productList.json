@@ -1,98 +1,124 @@
-[
+{
+  "categories": [
     {
-        "category": "Laptops",
-        "items": [
-            {
-                "sku": "LAP-003",
-                "name": "Lenovo IdeaPad Flex 5i 14\"",
-                "price": 799
-            },
-            {
-                "sku": "LAP-004",
-                "name": "Acer 14\" Swift 1 Notebook",
-                "price": 699
-            }
-        ]
+      "category": "Laptops",
+      "items": [
+        {
+          "sku": "LAP-003",
+          "name": "Lenovo IdeaPad Flex 5i 14\"",
+          "price": 799
+        },
+        {
+          "sku": "LAP-004",
+          "name": "Acer 14\" Swift 1 Notebook",
+          "price": 699
+        }
+      ]
     },
     {
-        "category": "Monitors",
-        "items": [
-            {
-                "sku": "MON-001",
-                "name": "HP 24\" FHD Monitor",
-                "price": 249
-            },
-            {
-                "sku": "MON-004",
-                "name": "LG 29\" UltraWide Monitor",
-                "price": 349
-            }
-        ]
+      "category": "Monitors",
+      "items": [
+        {
+          "sku": "MON-001",
+          "name": "HP 24\" FHD Monitor",
+          "price": 249
+        },
+        {
+          "sku": "MON-004",
+          "name": "LG 29\" UltraWide Monitor",
+          "price": 349
+        }
+      ]
     },
     {
-        "category": "Keyboards",
-        "items": [
-            {
-                "sku": "KEY-002",
-                "name": "J.Burrows Bluetooth Keyboard Silver KB200",
-                "price": 49.95
-            },
-            {
-                "sku": "KEY-003",
-                "name": "Logitech Wireless Keyboard K270",
-                "price": 59.95
-            }
-        ]
+      "category": "Keyboards",
+      "items": [
+        {
+          "sku": "KEY-002",
+          "name": "J.Burrows Bluetooth Keyboard Silver KB200",
+          "price": 49.95
+        },
+        {
+          "sku": "KEY-003",
+          "name": "Logitech Wireless Keyboard K270",
+          "price": 59.95
+        }
+      ]
     },
     {
-        "category": "Mice",
-        "items": [
-            {
-                "sku": "MOU-001",
-                "name": "Logitech M280 Wireless Mouse",
-                "price": 39.95
-            },
-            {
-                "sku": "MOU-003",
-                "name": "Microsoft Bluetooth Mouse",
-                "price": 49.95
-            }
-        ]
+      "category": "Mice",
+      "items": [
+        {
+          "sku": "MOU-001",
+          "name": "Logitech M280 Wireless Mouse",
+          "price": 39.95
+        },
+        {
+          "sku": "MOU-003",
+          "name": "Microsoft Bluetooth Mouse",
+          "price": 49.95
+        }
+      ]
     },
     {
-        "category": "Printers",
-        "items": [
-            {
-                "sku": "PRT-002",
-                "name": "Canon PIXMA TS5360a All-in-One Home Printer",
-                "price": 149
-            }
-        ]
+      "category": "Printers",
+      "items": [
+        {
+          "sku": "PRT-002",
+          "name": "Canon PIXMA TS5360a All-in-One Home Printer",
+          "price": 149
+        }
+      ]
     },
     {
-        "category": "Webcams",
-        "items": [
-            {
-                "sku": "WBC-001",
-                "name": "Logitech C920 HD Pro Webcam",
-                "price": 139
-            }
-        ]
+      "category": "Scanners",
+      "items": [
+        {
+          "sku": "SCN-001",
+          "name": "Brother DS-640 Portable Scanner",
+          "price": 179
+        }
+      ]
     },
     {
-        "category": "Headsets",
-        "items": [
-            {
-                "sku": "HSET-001",
-                "name": "Logitech H390 USB Headset",
-                "price": 79.95
-            }
-        ]
+      "category": "Webcams",
+      "items": [
+        {
+          "sku": "WBC-001",
+          "name": "Logitech C920 HD Pro Webcam",
+          "price": 139
+        }
+      ]
     },
     {
-        "category": "Scanners",
-        "items": [
-            {
-                "sku
-::contentReference[oaicite:0]{index=0}
- 
+      "category": "Headsets",
+      "items": [
+        {
+          "sku": "HSET-001",
+          "name": "Logitech H390 USB Headset",
+          "price": 79.95
+        }
+      ]
+    },
+    {
+      "category": "Speakerphones",
+      "items": [
+        {
+          "sku": "SPK-001",
+          "name": "Jabra Speak 510 Portable Bluetooth Speakerphone",
+          "price": 199
+        }
+      ]
+    },
+    {
+      "category": "UPS",
+      "items": [
+        {
+          "sku": "UPS-001",
+          "name": "APC Back-UPS 700VA",
+          "price": 229
+        }
+      ]
+    }
+  ]
+}
