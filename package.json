@@ -1,23 +1,16 @@
-[
-    {
-        "category": "Laptops",
-        "items": [
-            { "sku": "LP1001", "name": "Dell Inspiron 15", "price": 799.99 },
-            { "sku": "LP1002", "name": "Lenovo ThinkPad X1", "price": 1199.99 }
-        ]
-    },
-    {
-        "category": "Desktops",
-        "items": [
-            { "sku": "DT2001", "name": "HP Pavilion Desktop", "price": 649.99 },
-            { "sku": "DT2002", "name": "Acer Aspire TC", "price": 549.99 }
-        ]
-    },
-    {
-        "category": "Monitors",
-        "items": [
-            { "sku": "MN3001", "name": "Samsung 24\" LED Monitor", "price": 199.99 },
-            { "sku": "MN3002", "name": "LG 27\" 4K UHD Monitor", "price": 349.99 }
-        ]
-    }
-]
+{
+  "name": "job-pricing-calculator",
+  "version": "1.0.0",
+  "description": "A calculator for job pricing",
+  "main": "public/index.html",
+  "scripts": {
+    "start": "parcel public/index.html",
+    "build": "parcel build public/index.html --dist-dir dist"
+  },
+  "dependencies": {
+    "parcel": "^2.8.3"
+  },
+  "devDependencies": {},
+  "author": "Your Name",
+  "license": "MIT"
+}
