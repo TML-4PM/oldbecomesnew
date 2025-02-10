@@ -1,0 +1,12 @@
+{
+  "name": "job-pricing-calculator",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "parcel public/index.html",
+    "build": "parcel build public/index.html --dist-dir dist"
+  },
+  "dependencies": {
+    "parcel": "^2.8.3",
+    "nodemailer": "^6.9.1"
+  }
+}
