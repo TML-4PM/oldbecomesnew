@@ -1,0 +1,17 @@
+job-pricing-calculator/
+├── functions/
+│   ├── api.js
+│   └── chatbot.js
+├── public/
+│   ├── assets/
+│   │   ├── geeks2u-logo.png
+│   │   └── officeworks-logo.png
+│   ├── data/
+│   │   ├── 04_productList.json
+│   │   └── sample-calendar.json
+│   ├── 03_script.js
+│   ├── index.html
+│   └── styles.css
+├── 05_netlify.toml
+├── README.md
+└── package.json
