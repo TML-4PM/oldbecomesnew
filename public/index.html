@@ -1,40 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Job Pricing Calculator</title>
-    <link rel="stylesheet" href="./styles.css">
-    <script defer src="03_script.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Job Pricing Calculator</title>
+  <!-- Updated the stylesheet reference assuming styles.css is in the same folder -->
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Updated the script reference from 03_script.js to script.js -->
+  <script defer src="script.js"></script>
 </head>
 <body>
-    <header>
-        <img src="../assets/officeworks-logo.png" alt="Officeworks Logo">
-        <img src="../assets/geeks2u-logo.png" alt="Geeks2U Logo">
-        <h1>Job Pricing Calculator</h1>
-    </header>
+  <header>
+    <img src="../assets/officeworks-logo.png" alt="Officeworks Logo" />
+    <img src="../assets/geeks2u-logo.png" alt="Geeks2U Logo" />
+    <h1>Job Pricing Calculator</h1>
+  </header>
 
-    <section id="quote-form">
-        <label for="email">Enter Email to Pre-fill:</label>
-        <input type="email" id="email" placeholder="Enter your email">
-        <button onclick="fetchQuote()">Load Quote</button>
-        
-        <h2>Select Products</h2>
-        <div id="product-list"></div>
+  <section id="quote-form">
+    <label for="email">Enter Email to Pre-fill:</label>
+    <input type="email" id="email" placeholder="Enter your email" />
+    <button onclick="fetchQuote()">Load Quote</button>
 
-        <button onclick="generateQuote()">Generate Quote</button>
-        <button onclick="printQuote()">Print as PDF</button>
-        <button onclick="scheduleJob()">Schedule Job</button>
-        
-        <h2>Quote Summary</h2>
-        <div id="quote-summary"></div>
-        <p id="total-price"></p>
+    <h2>Select Products</h2>
+    <div id="product-list"></div>
 
-        <button onclick="sendEmail()">Email Quote</button>
-    </section>
+    <button onclick="generateQuote()">Generate Quote</button>
+    <button onclick="printQuote()">Print as PDF</button>
+    <button onclick="scheduleJob()">Schedule Job</button>
 
-    <footer>
-        <p>&copy; 2025 Officeworks & Geeks2U</p>
-    </footer>
+    <h2>Quote Summary</h2>
+    <div id="quote-summary"></div>
+    <p id="total-price"></p>
+
+    <button onclick="sendEmail()">Email Quote</button>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Officeworks &amp; Geeks2U</p>
+  </footer>
 </body>
 </html>
