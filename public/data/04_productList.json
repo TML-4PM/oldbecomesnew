@@ -1,89 +1,33 @@
 [
-  {
-    "category": "Laptops",
-    "items": [
-      { "sku": "LP001", "name": "Dell Inspiron 15", "price": 800 },
-      { "sku": "LP002", "name": "HP Pavilion 14", "price": 750 },
-      { "sku": "LP003", "name": "Lenovo ThinkPad X1", "price": 1200 }
-    ]
-  },
-  {
-    "category": "Desktops",
-    "items": [
-      { "sku": "DT001", "name": "Lenovo ThinkCentre M720", "price": 600 },
-      { "sku": "DT002", "name": "HP EliteDesk 800", "price": 700 }
-    ]
-  },
-  {
-    "category": "Monitors",
-    "items": [
-      { "sku": "MN001", "name": "Dell UltraSharp 24", "price": 250 },
-      { "sku": "MN002", "name": "Samsung Curved 27", "price": 350 },
-      { "sku": "MN003", "name": "LG Ultrawide 34", "price": 450 }
-    ]
-  },
-  {
-    "category": "Keyboards & Mice",
-    "items": [
-      { "sku": "KM001", "name": "Logitech MK270 Combo", "price": 50 },
-      { "sku": "KM002", "name": "Microsoft Wireless Desktop 900", "price": 80 }
-    ]
-  },
-  {
-    "category": "Docking Stations",
-    "items": [
-      { "sku": "DS001", "name": "Dell WD19TB", "price": 200 },
-      { "sku": "DS002", "name": "HP Thunderbolt Dock 120W", "price": 250 }
-    ]
-  },
-  {
-    "category": "Printers & Scanners",
-    "items": [
-      { "sku": "PS001", "name": "HP LaserJet Pro", "price": 300 },
-      { "sku": "PS002", "name": "Canon ScanMate", "price": 150 }
-    ]
-  },
-  {
-    "category": "POS Systems",
-    "items": [
-      { "sku": "POS001", "name": "Square Stand", "price": 150 },
-      { "sku": "POS002", "name": "Clover Station", "price": 350 }
-    ]
-  },
-  {
-    "category": "Tablets & Mobile Devices",
-    "items": [
-      { "sku": "TB001", "name": "Apple iPad", "price": 500 },
-      { "sku": "TB002", "name": "Samsung Galaxy Tab", "price": 450 }
-    ]
-  },
-  {
-    "category": "VR/XR Headsets",
-    "items": [
-      { "sku": "VR001", "name": "Oculus Quest 2", "price": 300 },
-      { "sku": "VR002", "name": "HTC Vive Pro", "price": 700 }
-    ]
-  },
-  {
-    "category": "Barcode Scanners",
-    "items": [
-      { "sku": "BS001", "name": "Honeywell Voyager", "price": 150 },
-      { "sku": "BS002", "name": "Zebra DS2208", "price": 180 }
-    ]
-  },
-  {
-    "category": "Thin Clients & Virtual Desktops",
-    "items": [
-      { "sku": "TC001", "name": "Dell Wyse 5070", "price": 400 },
-      { "sku": "TC002", "name": "HP t640", "price": 420 }
-    ]
-  },
-  {
-    "category": "Peripheral Accessories",
-    "items": [
-      { "sku": "PA001", "name": "Monitor Arm", "price": 70 },
-      { "sku": "PA002", "name": "HDMI Cable", "price": 15 },
-      { "sku": "PA003", "name": "USB Hub", "price": 30 }
-    ]
-  }
-]
+    {
+        "category": "Laptops",
+        "items": [
+            { "sku": "LAP-001", "name": "Dell XPS 13", "price": 1299 },
+            { "sku": "LAP-002", "name": "MacBook Air", "price": 999 },
+            { "sku": "LAP-003", "name": "Lenovo ThinkPad X1 Carbon", "price": 1399 },
+            { "sku": "LAP-004", "name": "HP Spectre x360", "price": 1199 },
+            { "sku": "LAP-005", "name": "Asus ZenBook 14", "price": 1099 },
+            { "sku": "LAP-006", "name": "Acer Swift 3", "price": 899 },
+            { "sku": "LAP-007", "name": "Microsoft Surface Laptop 4", "price": 1299 },
+            { "sku": "LAP-008", "name": "Razer Blade Stealth 13", "price": 1599 },
+            { "sku": "LAP-009", "name": "Samsung Galaxy Book S", "price": 999 },
+            { "sku": "LAP-010", "name": "Google Pixelbook Go", "price": 849 }
+        ]
+    },
+    {
+        "category": "Keyboards",
+        "items": [
+            { "sku": "KEY-001", "name": "Logitech MX Keys", "price": 99 },
+            { "sku": "KEY-002", "name": "Apple Magic Keyboard", "price": 129 },
+            { "sku": "KEY-003", "name": "Microsoft Surface Keyboard", "price": 89 }
+        ]
+    },
+    {
+        "category": "Monitors",
+        "items": [
+            { "sku": "MON-001", "name": "Dell UltraSharp 27", "price": 499 },
+            { "sku": "MON-002", "name": "LG 27UK850-W", "price": 449 },
+            { "sku": "MON-003", "name": "ASUS ProArt Display PA278QV", "price": 399 },
+            { "sku": "MON-004",
+::contentReference[oaicite:0]{index=0}
+ 
